@@ -72,18 +72,15 @@ int main() {
 
 
 // Fungsi untuk konversi berat
+void konversi_berat() {
+    float input;
+    print("\n-- KONVERSI BERAT --\n");
+    printf("Masukan Kilogram: ");
+    scanf("%f", &input);
 
-
-
-
-
-
-
-
-
-
-
-
+    printf("Gram : %.2f\n", input*1000);
+    printf("pons : %.2f\n", input*10);
+}
 
 // Fungsi untuk konversi waktu
 
