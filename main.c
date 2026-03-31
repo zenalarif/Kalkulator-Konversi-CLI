@@ -2,5 +2,6 @@
 
 int main() {
     printf("=== KALKULATOR KONVERSI ===\n");
+    printf("===============================")
     return 0;
 }
