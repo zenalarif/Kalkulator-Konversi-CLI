@@ -58,17 +58,15 @@ int main() {
 
 
 // Fungsi untuk konversi jarak
+void konversi_jarak(){
+    float input;
+    printf("\n---Konversi Jarak---\n");
+    printf("Masukkan kilometer: ");
+    scanf("%f", &input);
 
-
-
-
-
-
-
-
-
-
-
+    printf("Meter : %.2f\n", input*1000);
+    printf("Centimeter : %.2f\n", input*10000);
+}
 
 
 // Fungsi untuk konversi berat
