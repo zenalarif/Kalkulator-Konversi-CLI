@@ -23,7 +23,7 @@ int main() {
         scanf("%d", &pilih);
 
         switch(pilih) {
-            case 1: konversi_suhu();
+            case 1: konversi_suhu();  break;
             case 2: konversi_jarak(); break;
             case 3: konversi_berat(); break;
             case 4: konversi_waktu(); break;
@@ -42,21 +42,6 @@ int main() {
 // ==============================
 // FUNGSI-FUNGSI
 // ==============================
-
-// Fungsi untuk konversi suhu
-
-
-
-
-// vexana gerry
-
-
-
-
-
-
-
-
 // Fungsi untuk konversi jarak
 void konversi_jarak(){
     float input;
