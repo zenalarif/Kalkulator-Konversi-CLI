@@ -43,16 +43,16 @@ int main() {
 // FUNGSI-FUNGSI
 // ==============================
 
-void konversi_suhu() {
-    float input;
-    printf("\n--- Konversi Suhu ---\n");
-    printf("Masukkan Celsius: ");
-    scanf("%f", &input);
+// Fungsi untuk konversi suhu
 
-    printf("Fahrenheit : %.2f\n", (input * 9/5) + 32);
-    printf("Kelvin     : %.2f\n", input + 273.15);
-}
 
+
+
+
+
+
+
+// Fungsi untuk konversi jarak
 void konversi_jarak(){
     float input;
     printf("\n--- Konversi Jarak ---\n");
@@ -63,6 +63,7 @@ void konversi_jarak(){
     printf("Centimeter : %.2f\n", input * 100000);
 }
 
+// Fungsi untuk konversi berat
 void konversi_berat() {
     float input;
     printf("\n--- KONVERSI BERAT ---\n");
@@ -73,6 +74,7 @@ void konversi_berat() {
     printf("Pons : %.2f\n", input * 10);
 }
 
+// Fungsi untuk konversi waktu
 void konversi_waktu() {
     float input;
     printf("\n--- KONVERSI WAKTU ---\n");
