@@ -44,11 +44,20 @@ int main() {
 // ==============================
 
 // Fungsi untuk konversi suhu
+void konversi_suhu() {
+    float input;
+    printf("\n---Konversi Suhu---\n");
+    printf("Masukkan Celsius: ");
+    scanf("%f", &input);
+
+    printf("Fahrenheit : %.2f\n", (input * 9/5) + 32);
+    printf("Kelvin : %.2f\n", input + 273.15);
+}
 
 
 
 
-// vexana gerry
+
 
 
 
@@ -63,7 +72,6 @@ void konversi_jarak(){
     printf("\n---Konversi Jarak---\n");
     printf("Masukkan kilometer: ");
     scanf("%f", &input);
-
     printf("Meter : %.2f\n", input*1000);
     printf("Centimeter : %.2f\n", input*10000);
 }
@@ -90,6 +98,14 @@ void konversi_waktu() {
     printf("Menit : %.2f\n", input * 60);
     printf("Detik : %.2f\n", input * 3600);
 }
+    printf("\n---Konversi Waktu---\n");
+    printf("Masukkan jam: ");
+    scanf("%f", &input);
+
+    printf("Menit : %.2f\n", input*60);
+    printf("Detik : %.2f\n", input*3600);
+}
+
 
 
 
