@@ -10,15 +10,17 @@ int main() {
     int pilih;
 
     do {
-        printf("\n=====================================\n");
+        printf("=========================================\n");
+        printf("  =====================================\n");
         printf("   KALKULATOR KONVERSI SATUAN CLI\n");
-        printf("=====================================\n");
+        printf(". =====================================\n");
         printf("1. Konversi Suhu\n");
         printf("2. Konversi Jarak\n");
         printf("3. Konversi Berat\n");
         printf("4. Konversi Waktu\n");
         printf("0. Keluar\n");
-        printf("=====================================\n");
+        printf("  =====================================\n");
+        printf("=========================================\n");
         printf("Pilih menu: ");
         scanf("%d", &pilih);
 
