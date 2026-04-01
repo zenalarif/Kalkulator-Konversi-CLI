@@ -81,7 +81,15 @@ void konversi_berat() {
 }
 
 // Fungsi untuk konversi waktu
+void konversi_waktu() {
+    float input;
+    printf("\n--- KONVERSI WAKTU ---\n");
+    printf("Masukkan Jam: ");
+    scanf("%f", &input);
 
+    printf("Menit : %.2f\n", input * 60);
+    printf("Detik : %.2f\n", input * 3600);
+}
 
 
 
