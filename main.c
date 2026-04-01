@@ -5,6 +5,9 @@ void konversi_suhu();
 void konversi_jarak();
 void konversi_berat();
 void konversi_waktu();
+void celcius();
+void farenheit();
+void kelvin();
 
 int main() {
     int pilih;
@@ -23,7 +26,7 @@ int main() {
         scanf("%d", &pilih);
 
         switch(pilih) {
-            case 1: konversi_suhu(); break;
+            case 1: konversi_suhu();
             case 2: konversi_jarak(); break;
             case 3: konversi_berat(); break;
             case 4: konversi_waktu(); break;
@@ -72,7 +75,7 @@ void konversi_jarak(){
 // Fungsi untuk konversi berat
 void konversi_berat() {
     float input;
-    print("\n-- KONVERSI BERAT --\n");
+    printf("\n-- KONVERSI BERAT --\n");
     printf("Masukan Kilogram: ");
     scanf("%f", &input);
 
@@ -91,9 +94,79 @@ void konversi_waktu() {
     printf("Detik : %.2f\n", input * 3600);
 }
 
+//Fungsi untuk konversi suhu
+void konversi_suhu(){
+    int inputpilihan1;
+    printf("\n-- KONVERSI SUHU--\n");
+    printf ("1. Celcius\n2. Farenheit\n3. Kelvin");
+    printf ("Pilihan: ");
+    switch (inputpilihan1)
+    {
+    case 1: celcius(); break;
+    case 2: farenheit(); break;
+    case 3: kelvin(); break;
+    
+    default:
+    printf("\nPilihan tidak valid!\n");
+        break;
+    }
+}
 
+void celcius(){
+    int besarSuhu=0;
+    int pilihanSuhu;
+    printf("\n-- Berapa besar suhu? --\n");
+    printf ("Celcius: ");
+    scanf("%f", &besarSuhu);
+    printf("\n-- Konversi suhu ke? --\n");
+    printf ("1. Farenheit\n2. Kelvin");
+    printf ("Pilihan: ");
+    scanf("%f", &pilihanSuhu);
+    switch (pilihanSuhu)
+    {
+    case 1: printf ("Farenheit: %d", besarSuhu=(besarSuhu*9)/5 + 32); break;
+    case 2: printf ("Kelvin: %d", besarSuhu+273.15 ); break;
+            default:
+                printf("\nPilihan tidak valid!\n");
+        }
+    }
+void farenheit(){
+    int besarSuhu=0;
+    int pilihanSuhu;
+    printf("\n-- Berapa besar suhu? --\n");
+    printf ("Farenheit: ");
+    scanf("%f", &besarSuhu);
+    printf("\n-- Konversi suhu ke? --\n");
+    printf ("1. Celcius\n2. Kelvin");
+    printf ("Pilihan: ");
+    scanf("%f", &pilihanSuhu);
+    switch (pilihanSuhu)
+    {
+    case 1: printf ("Celcius: %d", besarSuhu=(besarSuhu*5)/9-32); break;
+    case 2: printf ("Kelvin: %d", besarSuhu=(((besarSuhu-32)*5)/9)+273.15 ); break;
+            default:
+                printf("\nPilihan tidak valid!\n");
+        }
+    }
 
-
+    void kelvin(){
+    int besarSuhu=0;
+    int pilihanSuhu;
+    printf("\n-- Berapa besar suhu? --\n");
+    printf ("Kelvin: ");
+    scanf("%f", &besarSuhu);
+    printf("\n-- Konversi suhu ke? --\n");
+    printf ("1. Farenheit\n2. Celcius");
+    printf ("Pilihan: ");
+    scanf("%f", &pilihanSuhu);
+    switch (pilihanSuhu)
+    {
+    case 1: printf ("Celcius: %d", besarSuhu=besarSuhu-273.15); break;
+    case 2: printf ("Farenheit: %d", besarSuhu=(((besarSuhu-273.15)*9)/5)+32); break;
+            default:
+                printf("\nPilihan tidak valid!\n");
+        }
+    }
 
 
 
