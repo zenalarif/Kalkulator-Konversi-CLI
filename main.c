@@ -23,7 +23,7 @@ int main() {
         scanf("%d", &pilih);
 
         switch(pilih) {
-            case 1: konversi_suhu(); break;
+            case 1: konversi_suhu();
             case 2: konversi_jarak(); break;
             case 3: konversi_berat(); break;
             case 4: konversi_waktu(); break;
@@ -48,6 +48,11 @@ int main() {
 
 
 
+// vexana gerry
+
+
+
+
 
 
 
@@ -55,23 +60,24 @@ int main() {
 // Fungsi untuk konversi jarak
 void konversi_jarak(){
     float input;
-    printf("\n--- Konversi Jarak ---\n");
-    printf("Masukkan Kilometer: ");
+    printf("\n---Konversi Jarak---\n");
+    printf("Masukkan kilometer: ");
     scanf("%f", &input);
 
-    printf("Meter      : %.2f\n", input * 1000);
-    printf("Centimeter : %.2f\n", input * 100000);
+    printf("Meter : %.2f\n", input*1000);
+    printf("Centimeter : %.2f\n", input*10000);
 }
+
 
 // Fungsi untuk konversi berat
 void konversi_berat() {
     float input;
-    printf("\n--- KONVERSI BERAT ---\n");
-    printf("Masukkan Kilogram: ");
+    printf("\n-- KONVERSI BERAT --\n");
+    printf("Masukan Kilogram: ");
     scanf("%f", &input);
 
-    printf("Gram : %.2f\n", input * 1000);
-    printf("Pons : %.2f\n", input * 10);
+    printf("Gram : %.2f\n", input*1000);
+    printf("pons : %.2f\n", input*10);
 }
 
 // Fungsi untuk konversi waktu
@@ -84,3 +90,18 @@ void konversi_waktu() {
     printf("Menit : %.2f\n", input * 60);
     printf("Detik : %.2f\n", input * 3600);
 }
+
+//Fungsi untuk konversi suhu
+void konversi_suhu() {
+    float input;
+    printf("\n--- Konversi Suhu ---\n");
+    printf("Masukkan Celsius: ");
+    scanf("%f", &input);
+
+    printf("Fahrenheit : %.2f\n", (input * 9/5) + 32);
+    printf("Kelvin     : %.2f\n", input + 273.15);
+}
+
+
+
+
